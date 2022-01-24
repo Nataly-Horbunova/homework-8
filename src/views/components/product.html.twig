@@ -1,0 +1,26 @@
+<section class="product {{ class ?? '' }}
+		{% if reversed == true %}
+		product_reversed
+		{% endif %}">
+
+	<img src="{{ product.img }}" alt="{{ product.title }}" class="product__img">
+
+	<div class="product__text-block">
+		<h3 class="product__title title-text">
+			{{ product.title }}
+		</h3>
+		<p class="product__description">
+			{{ product.description }}
+		</p>
+
+		<div class="product__actions">
+			{% include '@components/button.html.twig' with {
+				text: 'BUY ' ~ product.price,
+        		style: 'outlined'
+    		}%}
+			<a class="product__link" href="{{ product.link }}">
+				Learn more
+			</a>
+		</div>
+	</div>
+</section>

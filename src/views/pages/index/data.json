@@ -1,0 +1,31 @@
+{
+  "title": "Home page",
+  "products": [
+      {
+      "title": "Calvin Klein Obsession",
+      "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English",
+      "img": "./assets/img/img-1.png",
+      "link": "#1",
+      "price": "25$"
+      },
+
+      {
+        "title": "Lorem Ipsum is simply dummy text",
+        "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English",
+        "img": "./assets/img/img-2.png",
+        "link": "#2",
+        "price": "32$"
+        },
+
+        {
+          "title": "It has survived not only five centuries",
+          "description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English",
+          "img": "./assets/img/img-3.png",
+          "link": "#3",
+          "price": "48$"
+          }
+  ]
+
+  
+}
+

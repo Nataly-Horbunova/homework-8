@@ -1,0 +1,39 @@
+<form class="form-section main-content__form">
+	<fieldset class="form-section__container">
+		<h3 class="form-section__title title-text">
+			Contact us
+		</h3>
+
+		{% include '@components/field.html.twig' with {
+			style: 'filled',
+            placeholder: 'Name',
+			text: 'required'
+        }
+        %}
+
+		{% include '@components/field.html.twig' with {
+            style: 'filled',
+            placeholder: 'Surname',
+			text: 'required'
+        }
+        %}
+
+		{% include '@components/field.html.twig' with {
+            style: 'filled',
+            placeholder: 'Email',
+			type: 'email',
+			text: 'required'
+        }
+        %}
+
+		<textarea class="form-section__message field" placeholder="Message"></textarea>
+
+		{% include '@components/button.html.twig' with {
+            type: 'submit',
+			text: 'Send message',
+        	style: 'shaded', 
+            class: 'form-section__btn-submit'
+		}%}
+
+	</fieldset>
+</form>

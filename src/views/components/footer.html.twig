@@ -1,0 +1,28 @@
+<footer class="footer page__footer">
+	<div class="container footer__container">
+
+		{% include '@components/copyright.html.twig' with {
+        class: 'footer__copyright'
+        } %}
+
+		<div class="footer__items">
+
+			{% include '@components/logo.html.twig' with {
+                src: './assets/img/Logo-footer.svg'
+            }%}
+            
+			{% include '@components/button.html.twig' with {
+				text: 'To Cart' ,
+        		style: 'outlined',
+    		}%}
+
+		</div>
+
+		{% include '@components/navigation.html.twig' with {
+        links,
+        style: 'footer',
+        } %}
+
+	</div>
+
+</div></footer>

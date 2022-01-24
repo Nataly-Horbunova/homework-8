@@ -1,0 +1,25 @@
+<header class="header">
+	<div class="container header__container">
+		{% include '@components/navigation.html.twig' with {
+        links,
+        } %}
+
+		{% include '@components/logo.html.twig' with {
+            src: './assets/img/Logo-header.svg'
+        }
+        %}
+
+		<div class="header__actions">
+
+			{% include '@components/field.html.twig' with {
+                placeholder: 'Search...'
+            }%}
+
+			{% include '@components/button.html.twig' with {
+                text: 'BUY 99$',
+            }%}
+
+		</div>
+
+	</div>
+</header>

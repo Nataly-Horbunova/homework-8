@@ -1,0 +1,36 @@
+.form-section {
+  display: flex;
+  justify-content: center;
+}
+
+.form-section__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 28px;
+  flex-basis: 400px;
+  }
+
+.form-section__title {
+  text-align: center;
+  font-weight: 500;
+  line-height: 32px;
+  margin-bottom: -18px;
+}
+
+.form-section__message {
+  height: 113px;
+  background-color: #f3f3f3;
+  color: #717171;
+  resize: none;
+}
+
+.form-section__message::placeholder {
+  color: inherit;
+  font-family: "Poppins";
+  text-align: start;
+}
+
+.form-section__btn-submit {
+  align-self: center;
+}

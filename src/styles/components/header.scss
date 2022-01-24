@@ -1,0 +1,24 @@
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 50px;
+  background-color: #db7093;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.header__actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+

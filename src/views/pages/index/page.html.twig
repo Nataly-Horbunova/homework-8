@@ -1,0 +1,43 @@
+{% set data = json('./data.json') %}
+
+{% extends '@layouts/app.html.twig' %}
+
+{% block title %}
+	{{ data.title }}
+{% endblock %}
+
+{% block content %}
+
+	{% include '@components/header.html.twig' with {
+    links: [
+            { title: 'Home', href: '/', active: true },
+            { title: 'About', href: '/about' },
+            { title: 'Contacts', href: '/contacts' },
+            { title: 'Products', href: '/products' },
+        ]
+    }
+  %}
+	<main class="main-content">
+
+		{% include '@components/main-title.html.twig' with {
+    text: 'Some Product Site',
+    class: 'main-content__title'
+    } %}
+
+		{% include '@components/products-section.html.twig' %}
+
+		{% include '@components/form-section.html.twig' %}
+
+	</main>
+
+	{% include '@components/footer.html.twig' with {
+    links: [
+            { title: 'Home', href: '/', active: true },
+            { title: 'About', href: '/about' },
+            { title: 'Contacts', href: '/contacts' },
+            { title: 'Products', href: '/products' },
+          ]
+    }
+  %}
+
+{% endblock %}
